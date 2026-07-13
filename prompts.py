@@ -110,18 +110,3 @@ Think about how this question relates to the conversation:
 
 Return ONLY the rewritten search query, nothing else — no explanation."""
 
-SCOPE_PROMPT = """Is this question about Hong Kong LABOR/EMPLOYMENT regulations \
-specifically (wages, leave, termination, contracts, workplace rights, \
-recruitment agencies, visas tied to employment)?
-
-Conversation so far:
-{history_context}
-
-Question: "{query}"
-
-Loans, banking, general financial advice, healthcare/insurance providers, and \
-similar topics are OUT_OF_SCOPE even if the user mentions them in a work context.
-
-IMPORTANT: Do NOT answer the question itself. Do NOT provide any information, \
-facts, or advice about the topic. Your only task is to classify it — output \
-nothing except the classification."""
